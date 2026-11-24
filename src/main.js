@@ -17,16 +17,13 @@ function render() {
 
   document.querySelector('#app').innerHTML = `
     <div class="min-h-screen bg-pink-50 text-gray-800">
-      <nav class="bg-white border-b border-pink-200 px-6 py-3 flex items-center justify-between">
-        <span class="font-bold text-pink-500">🌸 My Web</span>
-        <div class="flex gap-4 text-sm">
-          <a href="#/" class="hover:text-pink-500">Home</a>
-          <a href="#/about" class="hover:text-pink-500">About</a>
-          <a href="#/contact" class="hover:text-pink-500">Contact</a>
-          <a href="#/admin" class="hover:text-pink-500">Admin</a>
-        </div>
+      <nav class="bg-white border-b border-pink-200 px-6 py-3 flex gap-4 text-sm">
+        <a href="#/" class="text-pink-600 font-medium">Home</a>
+        <a href="#/about" class="text-pink-600 font-medium">About</a>
+        <a href="#/contact" class="text-pink-600 font-medium">Contact</a>
+        <a href="#/admin" class="text-pink-600 font-medium">Admin</a>
       </nav>
-      <div class="max-w-3xl mx-auto p-6">
+      <div class="max-w-2xl mx-auto p-6">
         ${Page()}
       </div>
     </div>
